@@ -13,5 +13,5 @@ const {processInput} = require("./lib/utils");
 
 let testdata = processInput('./' + day + '/test.txt');
 let data = processInput('./' + day + '/input.txt');
-let challenge = new Challenge(testdata, data, 11, 31);
+let challenge = new Challenge(testdata, data);
 challenge.run();
