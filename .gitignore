@@ -25,3 +25,5 @@ logs
 # Environment variables
 .env*
 /.idea
+
+*.txt
