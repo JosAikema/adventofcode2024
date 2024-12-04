@@ -26,4 +26,5 @@ logs
 .env*
 /.idea
 
-*.txt
+input.txt
+test.txt
