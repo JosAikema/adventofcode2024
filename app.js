@@ -9,9 +9,12 @@ console.log('Day: ', day)
 const Challenge = require('./' + day + '/day' + day + '.js')
 const {processInput} = require("./lib/utils");
 
+let challenge = new Challenge()
+let noSplit = challenge.noSplit || false
 
+let testdata = processInput('./' + day + '/test.txt', noSplit);
+let data = processInput('./' + day + '/input.txt', noSplit);
 
-let testdata = processInput('./' + day + '/test.txt');
-let data = processInput('./' + day + '/input.txt');
-let challenge = new Challenge(testdata, data);
+challenge.setData(testdata,data)
+
 challenge.run();
